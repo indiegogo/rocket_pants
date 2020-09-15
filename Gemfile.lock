@@ -13,7 +13,7 @@ PATH
 PATH
   remote: .
   specs:
-    rocket_pants (5.0.0)
+    rocket_pants (5.0.1)
       actionpack (>= 4.0, < 6.0)
       api_smith
       hashie (>= 1.0, < 4)

@@ -2,6 +2,13 @@
 
 **Please Note**: This change log only covers v1.3 forwards - apologies for anything missing prior to that.
 
+## Version 5.0.1
+
+* Pin sqlite3 (development dependency) to 1.3.5 to avoid installing separate activerecord adapter
+* currently tested against 5.0.7 & 5.1.7
+* fix failing spec
+* resolve Rails 5.1 deprecations
+
 ## Version 5.0.0
 
 * Bringing Rocket Pants out of life support, namely: updating Ruby version to 2.3.5
