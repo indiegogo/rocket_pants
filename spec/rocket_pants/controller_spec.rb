@@ -229,7 +229,7 @@ describe RocketPants::Base do
 
     it 'should let you override the content type' do
       allow(TestController).to receive(:test_data) { {:hello => "World"} }
-      allow(TestController).to receive(:test_options) { {:content_type => Mime::HTML} }
+      allow(TestController).to receive(:test_options) { {:content_type => Mime[:html]} }
       get :test_data
       response.headers['Content-Type'].should =~ /text\/html/
     end

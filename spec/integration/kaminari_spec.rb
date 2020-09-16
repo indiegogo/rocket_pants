@@ -37,7 +37,7 @@ describe RocketPants::Base, 'kaminari integration', :target => 'kaminari', integ
       content[:response].should be_present
       content[:count].should == 5
       content[:pagination].should be_present
-      content[:pagination][:count].should == 5
+      content[:pagination][:count].should == 25
     end
 
     it 'should not expose non-paginated as paginated' do

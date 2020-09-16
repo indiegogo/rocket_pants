@@ -216,6 +216,7 @@ module RocketPants
       {}.tap do |metadata|
         metadata[:count]      = object.length unless singular
         metadata[:pagination] = Respondable.extract_pagination(object) if type == :paginated
+        options[:metadata] = options[:metadata].to_unsafe_h if options[:metadata].is_a?(ActionController::Parameters)
         metadata.merge! options[:metadata] if options[:metadata]
       end
     end
